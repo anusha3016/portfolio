@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anusha Kalamalla — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#6ee7b7;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071029 0%, #071a2a 100%);}
+    .container{max-width:1100px;margin:36px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6);display:grid;grid-template-columns:320px 1fr;gap:28px}
+
+    /* Sidebar */
+    .sidebar{background:var(--card);padding:22px;border-radius:12px;height:fit-content}
+    .avatar{height:88px;width:88px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:#052026}
+    h1{font-size:24px;margin:12px 0 4px}
+    .role{color:var(--muted);font-size:14px;margin-bottom:10px}
+    .contact{margin-top:14px;font-size:14px}
+    .contact a{color:#cfeffd;text-decoration:none}
+    .section{margin-top:20px}
+    .section h3{font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin:0 0 8px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:8px;margin:6px 6px 6px 0;display:inline-block;font-size:13px;color:var(--muted)}
+
+    /* Main */
+    .main{padding:22px;background:rgba(255,255,255,0.01);border-radius:12px}
+    .objective{background:linear-gradient(90deg, rgba(110,231,183,0.04), rgba(96,165,250,0.03));padding:14px;border-radius:10px;border:1px solid rgba(110,231,183,0.06);margin-bottom:18px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:var(--glass);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .edu-item, .exp-item, .proj-item{margin-bottom:12px}
+    .muted{color:var(--muted);font-size:13px}
+
+    /* Projects */
+    .proj-item h4{margin:4px 0 6px}
+    .tag{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:999px;font-size:12px;margin-right:8px}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:880px){.container{grid-template-columns:1fr;padding:18px}.sidebar{order:2}.main{order:1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="avatar">AK</div>
+        <div>
+          <h1>Anusha Kalamalla</h1>
+          <div class="role">B.Tech — Electronics & Communication</div>
+        </div>
+      </div>
+
+      <div class="contact section">
+        <div class="muted">Location</div>
+        <div>5/113, Ramalayam Street, Yerraguntla</div>
+        <div class="muted" style="margin-top:10px">Email</div>
+        <div><a href="mailto:anushak3016@gmail.com">anushak3016@gmail.com</a></div>
+        <div class="muted" style="margin-top:10px">Phone</div>
+        <div><a href="tel:+919505317338">+91 95053 17338</a></div>
+        <div class="muted" style="margin-top:10px">LinkedIn</div>
+        <div><a href="https://www.linkedin.com/in/anusha-kalamalla-71b77629b/" target="_blank">linkedin.com/in/anusha-kalamalla-71b77629b</a></div>
+      </div>
+
+      <div class="section">
+        <h3>Technical Skills</h3>
+        <div>
+          <span class="skill">Python</span>
+          <span class="skill">Java</span>
+          <span class="skill">C</span>
+          <span class="skill">HTML/CSS</span>
+          <span class="skill">SQL</span>
+        </div>
+
+        <h3 style="margin-top:12px">Tools</h3>
+        <div>
+          <span class="skill">VS Code</span>
+          <span class="skill">Google Colab</span>
+          <span class="skill">Jupyter</span>
+          <span class="skill">Excel</span>
+        </div>
+
+        <h3 style="margin-top:12px">Concepts</h3>
+        <div>
+          <span class="skill">Machine Learning</span>
+          <span class="skill">Data Viz</span>
+          <span class="skill">IoT</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Soft Skills</h3>
+        <div class="muted">Team Collaboration<br/>Problem Solving<br/>Communication<br/>Adaptability<br/>Time Management</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="objective">
+        <strong>Career Objective</strong>
+        <p style="margin:8px 0 0" class="muted">Motivated and detail-oriented B.Tech student in Electronics and Communication Engineering with hands-on experience in Artificial Intelligence, IoT, and data visualization. Seeking opportunities to apply technical skills and contribute to innovative projects in software development, AI, and embedded systems.</p>
+      </div>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <strong>B.Tech — Electronics & Communication Engineering</strong>
+            <div class="muted">Gouthami Institute of Technology & Management for Women, Proddatur — 2023 – Present</div>
+            <div style="margin-top:6px">Percentage: <strong>73%</strong></div>
+          </div>
+
+          <div class="edu-item">
+            <strong>Diploma — Electronics & Communication</strong>
+            <div class="muted">Gouthami Institute of Technology & Management for Women, Proddatur — 2019 – 2022</div>
+            <div style="margin-top:6px">Percentage: <strong>77.5%</strong></div>
+          </div>
+
+          <div class="edu-item">
+            <strong>SSC</strong>
+            <div class="muted">D.A.V. Model High School, Yerraguntla — 2018 – 2019</div>
+            <div style="margin-top:6px">Percentage: <strong>90%</strong></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Internships & Programs</h3>
+          <div class="exp-item">
+            <strong>Industrial Program — Artificial Intelligence</strong>
+            <div class="muted">1Stop — Feb 2024 – Jun 2024</div>
+            <div style="margin-top:6px">Worked on text classification with TensorFlow under mentor guidance.</div>
+          </div>
+
+          <div class="exp-item">
+            <strong>Internship — Internet of Things (IoT)</strong>
+            <div class="muted">NextHub Technologies Pvt Ltd (with Idmcodes Pvt Ltd) — May 2025 – Jul 2025</div>
+            <div style="margin-top:6px">Completed a 2-month internship on IoT applications, device connectivity and real-time systems.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Projects & Workshops</h3>
+          <div class="proj-item">
+            <h4>Smart Alarm System (AI & IoT)</h4>
+            <div class="muted">Integrated AI and IoT concepts to design an automated smart alarm system for improved efficiency.</div>
+            <div style="margin-top:8px"><span class="tag">AI</span><span class="tag">IoT</span><span class="tag">Embedded</span></div>
+          </div>
+
+          <div class="proj-item">
+            <h4>Milk Production — Community Service Project</h4>
+            <div class="muted">Raised awareness among farmers about sustainable practices and techniques to improve production efficiency.</div>
+            <div style="margin-top:8px"><span class="tag">Community</span><span class="tag">Research</span></div>
+          </div>
+
+          <div class="proj-item">
+            <h4>Workshop on MATLAB and Its Applications</h4>
+            <div class="muted">Contributed as a team member focusing on data visualization and simulations.</div>
+            <div style="margin-top:8px"><span class="tag">MATLAB</span><span class="tag">Data Viz</span></div>
+          </div>
+        </div>
+      </section>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">
+        <div class="card">
+          <h3>Declaration</h3>
+          <p class="muted">I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
+          <div style="margin-top:8px" class="muted">Place: Yerraguntla<br/>Date: 05/09/2025</div>
+        </div>
+
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="muted">Feel free to reach out for collaborations, internships, or project opportunities.</p>
+          <p style="margin-top:8px"><strong>Email:</strong> <a href="mailto:anushak3016@gmail.com">anushak3016@gmail.com</a><br/><strong>Phone:</strong> <a href="tel:+919505317338">+91 95053 17338</a></p>
+        </div>
+      </div>
+
+      <footer>Designed & built by Anusha Kalamalla • Portfolio generated from resume</footer>
+    </main>
+  </div>
+</body>
+</html>
